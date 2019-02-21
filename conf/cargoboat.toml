@@ -1,0 +1,17 @@
+[system]
+addr = "0.0.0.0:5000"
+mode = "debug"
+db_type = "leveldb"
+
+[leveldb]
+path = "/data/cargoboat.db"
+
+[client]
+[[client.basic_auth]]
+username = "cargoboat-client"
+password = "cargoboat"
+
+[server]
+[server.basic_auth]
+username = "cargoboat-server"
+password = "cargoboat"
