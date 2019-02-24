@@ -13,7 +13,7 @@ VOLUME ["/conf"]
 ADD ./conf /conf
 
 WORKDIR /app
-ADD https://github.com/cargoboat/cargoboat/releases/download/v1.1.0/cargoboat-linuxarm ./cargoboat
+ADD https://github.com/cargoboat/cargoboat/releases/download/v1.1.1/cargoboat-linuxarm ./cargoboat
 RUN chmod +x ./cargoboat
 
 ENV GIN_MODE=release
